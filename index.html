@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<title>Antonis Ballis</title>
+<meta name="description" content="Antonis Ballis is Associate Professor in Financial Technology at Aston Business School, Aston University, and Programme Director of the MSc Financial Technology. Research on cryptocurrencies, stablecoins, CBDCs, digital payments and AI in financial markets.">
+<meta name="author" content="Antonis Ballis">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://antonisballis.github.io/">
+<link rel="canonical" href="https://antonisballis.github.io/">
+<meta property="og:title" content="Antonis Ballis · Notes on new money and old institutions">
+<meta property="og:description" content="Antonis Ballis is Associate Professor in Financial Technology at Aston Business School, Aston University, and Programme Director of the MSc Financial Technology. Research on cryptocurrencies, stablecoins, CBDCs, digital payments and AI in financial markets.">
+<meta property="og:image" content="https://antonisballis.github.io/photo.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@antonisballis">
+<meta name="twitter:title" content="Antonis Ballis · Notes on new money and old institutions">
+<meta name="twitter:description" content="Antonis Ballis is Associate Professor in Financial Technology at Aston Business School, Aston University, and Programme Director of the MSc Financial Technology. Research on cryptocurrencies, stablecoins, CBDCs, digital payments and AI in financial markets.">
+<meta name="twitter:image" content="https://antonisballis.github.io/photo.jpg">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%276%27%20fill%3D%27%23000%27/%3E%3Ctext%20x%3D%2732%27%20y%3D%2744%27%20text-anchor%3D%27middle%27%20font-family%3D%27Georgia%2CTimes%20New%20Roman%2Cserif%27%20font-size%3D%2732%27%20font-weight%3D%27700%27%20fill%3D%27%23fff%27%3EAB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+/*
+VOICE: quiet academic homepage, black on white, nothing decorative
+IDEA: a well-set CV page
+PICTURE: none; the type and the lists are the page
+COLOUR and TYPE: white ground, black ink, grey only for secondary lines; Source Serif 4
+LAYOUT: white top bar and white bottom bar with underlined black links; one narrow column
+*/
+:root{color-scheme:light;--bg:#fff;--ink:#000;--mute:#555;--rule:#e5e5e5}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Source Serif 4",Georgia,"Times New Roman",serif;overflow-x:clip}
+a{color:var(--ink);text-decoration:none;text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{text-decoration:underline}
+a.b{font-weight:600}
+.totop{font-size:14px;letter-spacing:.06em;padding:6px 0}
+a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+
+/* top and bottom bars */
+:root{--col:860px;--pad:max(4vw,16px)}
+.bar{background:var(--bg);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 32px;padding:14px max(var(--pad),calc((100% - var(--col))/2))}
+header.bar{position:sticky;top:0;z-index:10;border-bottom:1px solid var(--rule)}
+footer.bar{border-top:1px solid var(--rule);margin-top:56px;font-size:15px}
+.name{font-weight:600;text-decoration:none;letter-spacing:.01em}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:nowrap;gap:6px 20px;white-space:nowrap}
+header nav{overflow-x:auto;scrollbar-width:none;max-width:100%}
+header nav::-webkit-scrollbar{display:none}
+nav a{font-size:14px;letter-spacing:.06em;display:inline-block;padding:6px 0;text-decoration:none}
+nav a:hover{text-decoration:underline;text-decoration-thickness:1px}
+.brand{display:flex;flex-direction:column;line-height:1.25}
+.tagline{font-size:14px;font-style:italic;color:var(--mute)}
+
+/* content */
+main{max-width:calc(var(--col) + 2*var(--pad));margin:0 auto;padding:0 var(--pad)}
+section{padding-top:56px}
+h1{font-size:40px;line-height:1.1;font-weight:600;margin:0 0 6px}
+h2{font-size:15px;letter-spacing:.1em;font-weight:600;margin:0 0 22px;padding-bottom:8px;border-bottom:1px solid var(--ink)}
+.role{margin:0 0 22px;color:var(--mute)}
+.role a{color:inherit}
+.role a:hover{color:var(--ink)}
+p{margin:0 0 16px}
+.portrait{float:right;width:170px;height:auto;margin:6px 0 16px 32px;display:block}
+#about::after{content:"";display:table;clear:both}
+.interests{margin:0 0 16px;padding-left:20px}
+.interests li{margin-bottom:2px}
+.interests li::marker{color:#999;font-size:.7em}
+
+.paper{margin:0 0 26px}
+.paper .t{font-weight:600}
+.paper .t a{text-decoration:none}
+.paper .t a:hover{text-decoration:underline;text-decoration-thickness:1px}
+.paper .meta{color:var(--mute);font-size:16px}
+.paper .meta i{color:var(--ink)}
+.plinks{display:flex;flex-wrap:wrap;gap:4px 22px;margin-top:4px;font-size:12.5px;line-height:1.4}
+.plinks button,.plinks a,.plinks > span{font:inherit;letter-spacing:inherit;color:var(--mute);background:none;border:0;padding:4px 0;cursor:pointer;text-decoration:none}
+.plinks button .sign{display:inline-block;width:1em;text-align:center;margin-right:2px;transition:transform .15s}
+.plinks button[aria-expanded=true] .sign{transform:rotate(90deg)}
+@media(prefers-reduced-motion:reduce){.plinks button .sign{transition:none}}
+.plinks button:hover,.plinks a:hover,.plinks button[aria-expanded=true]{color:var(--ink)}
+.plinks button:hover,.plinks a:hover{text-decoration:underline;text-underline-offset:3px}
+.plinks button:focus-visible,.plinks a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.plinks > span{color:#aaa;cursor:default}
+.absbody{margin:8px 0 0;font-size:16px;line-height:1.55}
+.absbody[hidden]{display:none}
+.absbody .ph{color:var(--mute);font-style:italic}
+.year{font-size:14px;letter-spacing:.08em;color:var(--mute);margin:30px 0 14px}
+.year:first-of-type{margin-top:0}
+
+.plain{list-style:none;padding:0;margin:0}
+.plain li{margin-bottom:10px}
+.courses li{display:flex;gap:16px}
+.courses .code{flex:none;width:5.5em;color:var(--mute)}
+.note{color:var(--mute);font-size:15px;font-style:italic}
+address{font-style:normal;margin:0 0 16px}
+.copy{color:var(--mute)}
+
+@media(max-width:600px){
+  h1{font-size:32px}
+  .portrait{float:none;width:140px;margin:0 0 20px}
+  header nav ul{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:0 22px}
+  footer nav ul{gap:2px 16px}
+  header nav a{font-size:13px;letter-spacing:.04em;padding:4px 0}
+  footer nav ul{flex-wrap:wrap}
+  .bar{justify-content:flex-start}
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="brand">
+    <a class="name" href="#about">Antonis Ballis</a>
+    <span class="tagline">Notes on new money and old institutions</span>
+  </div>
+  <nav aria-label="Sections">
+    <ul>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#working-papers">WORKING PAPERS</a></li>
+      <li><a href="#publications">PUBLICATIONS</a></li>
+      <li><a href="#teaching">TEACHING</a></li>
+      <li><a href="#media">MEDIA</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section id="about">
+  <img class="portrait" src="photo.jpg" alt="Portrait of Antonis Ballis" width="400" height="500">
+  <h1>Antonis Ballis</h1>
+  <p class="role">Associate Professor in Financial Technology<br>Programme Director, <a href="https://www.aston.ac.uk/study/courses/financial-technology-msc">MSc Financial Technology</a><br>Department of Accounting and Finance, Aston Business School, Aston University</p>
+  <p>My research is empirical and quantitative, and studies how new forms of money and digital assets interact with existing financial institutions. My work has appeared in <i>Risk Analysis</i>, the <i>Journal of Financial Stability</i>, the <i>International Journal of Central Banking</i>, the <i>Journal of Futures Markets</i>, the <i>International Review of Financial Analysis</i> and the <i>International Journal of Finance &amp; Economics</i>, among others.</p>
+  <p>At Aston University I direct the <a class="b" href="https://www.aston.ac.uk/study/courses/financial-technology-msc">MSc Financial Technology</a>. I hold a PhD from the Athens University of Economics and Business and I am a Senior Fellow of the Higher Education Academy (SFHEA).</p>
+  <p>Research interests:</p>
+  <ul class="interests">
+    <li>Cryptocurrencies and stablecoins</li>
+    <li>Central bank digital currencies (CBDCs)</li>
+    <li>Digital and cross-border payments</li>
+    <li>AI in financial markets</li>
+  </ul>
+  <p><a class="b" href="#">Curriculum Vitae</a> &nbsp;·&nbsp; <a class="b" href="https://scholar.google.com/scholar?q=%22Antonis+Ballis%22">Google Scholar</a> &nbsp;·&nbsp; <a class="b" href="https://x.com/antonisballis">X</a></p>
+</section>
+
+<section id="working-papers">
+  <h2>WORKING PAPERS</h2>
+  <div id="wp"></div>
+</section>
+
+<section id="publications">
+  <h2>PUBLICATIONS</h2>
+  <div id="pubs"></div>
+</section>
+
+<section id="teaching">
+  <h2>TEACHING</h2>
+  <ul class="plain courses">
+    <li><span class="code">BAM118</span>Blockchain and Fintech (MSc)</li>
+    <li><span class="code">BAM115</span>Emerging Topics in Fintech (MSc)</li>
+  </ul>
+</section>
+
+<section id="media">
+  <h2>MEDIA</h2>
+  <div class="year">Articles</div>
+  <div class="paper">
+    <div class="t"><a href="https://www.naftemporiki.gr/afieromata/the-n-society/2137937/bitcoin-katafygio-i-kathreftis-tis-avevaiotitas/">Bitcoin: Safe haven or mirror of uncertainty?</a></div>
+    <div class="meta"><i>Naftemporiki</i>, July 2026 · in Greek</div>
+  </div>
+  <div class="paper">
+    <div class="t"><a href="https://www.capital.gr/me-apopsi/3999799/stablecoins-kai-to-epitokio-pou-oi-trapezes-den-theloun-na-sas-dosoun/">Stablecoins and the interest rate banks don’t want to give you</a></div>
+    <div class="meta"><i>Capital.gr</i>, July 2026 · in Greek</div>
+  </div>
+  <div class="paper">
+    <div class="t"><a href="https://www.kathimerini.gr/economy/564101518/arthro-ton-antoni-mpalli-kai-christoy-kallandrani-stin-k-einai-oi-pliromes-anoite-i-atheati-stratigiki-eyalototita-tis-eyropis/">Are payments Europe’s hidden strategic vulnerability?</a></div>
+    <div class="meta"><i>Kathimerini</i>, March 2026 · in Greek</div>
+  </div>
+  <div class="paper">
+    <div class="t">Artificial intelligence and financial education</div>
+    <div class="meta"><i>Naftemporiki</i>, front-page feature, October 2024 · in Greek</div>
+  </div>
+  <div class="paper">
+    <div class="t"><a href="https://www.naftemporiki.gr/afieromata/the-n-society/1761787/daneia-mono-gia-gennaioys-oi-apotharrimenoi-ypopsifioi-daneioliptes/">Loans only for the brave? Discouraged would-be borrowers</a></div>
+    <div class="meta"><i>Naftemporiki</i>, front-page feature, September 2024 · in Greek</div>
+  </div>
+  <div class="paper">
+    <div class="t"><a href="https://www.naftemporiki.gr/finance/markets/1671833/ti-einai-telika-to-psifiako-eyro-kai-giati-to-chreiazomaste/">What exactly is the digital euro, and why do we need it?</a></div>
+    <div class="meta"><i>Naftemporiki</i>, May 2024 · in Greek</div>
+  </div>
+  <div class="paper">
+    <div class="t"><a href="https://www.naftemporiki.gr/finance/markets/1657134/psifiako-eyro-ti-einai-kai-poies-oi-epiptoseis-toy-sto-trapeziko-systima/">Digital euro: What is it and what are its implications for the banking system?</a></div>
+    <div class="meta"><i>Naftemporiki</i>, May 2024 · in Greek</div>
+  </div>
+  <div class="year">Video</div>
+  <div class="paper">
+    <div class="t"><a href="https://youtu.be/GjruGVL6lM4">Can there be an economy without cash?</a></div>
+    <div class="meta"><i>Naftemporiki TV</i>, March 2025 · in Greek</div>
+  </div>
+  <div class="paper">
+    <div class="t"><a href="https://youtu.be/8vaJK1gdHp8">Digital euro: Launching in 2025 – What happens to cash?</a></div>
+    <div class="meta"><i>Naftemporiki TV</i>, January 2025 · in Greek</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>CONTACT</h2>
+  <p>Email: <a class="b" href="mailto:a.ballis@aston.ac.uk">a.ballis@aston.ac.uk</a></p>
+  <address>
+    Department of Accounting and Finance<br>
+    Aston Business School, Aston University<br>
+    Aston Triangle, Birmingham B4 7ET<br>
+    United Kingdom
+  </address>
+  <p><a class="b" href="https://publications.aston.ac.uk/view/author/e679e52693f8d297a13b285208740b6e.date.html">Aston Research Explorer</a> &nbsp;·&nbsp; <a class="b" href="https://scholar.google.com/scholar?q=%22Antonis+Ballis%22">Google Scholar</a> &nbsp;·&nbsp; <a class="b" href="https://x.com/antonisballis">X</a></p>
+</section>
+
+</main>
+
+<footer class="bar">
+  <span class="copy">© <span id="yr">2026</span> Antonis Ballis · Aston Business School</span>
+  <a class="totop" href="#about">BACK TO TOP ↑</a>
+</footer>
+
+<script>
+{
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const scholar = t => 'https://scholar.google.com/scholar?q=' + encodeURIComponent('"' + t + '"');
+
+  const workingPapers = [
+      {
+          "t": "When is private money information-sensitive? Evidence from stablecoin reserve disclosures",
+          "w": "Steven Ongena, Phuong Anh Nguyen and Dimitris Anastasiou",
+          "s": "Swiss Finance Institute Research Paper No. 26-64, 2026",
+          "url": "https://www.sfi.ch/en/publications/n-26-64-when-is-private-money-information-sensitive-evidence-from-stablecoin-reserve-disclosures",
+          "pdf": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7470320",
+          "pdfLabel": "SSRN",
+          "a": "Theories of private money predict that debt designed to circulate at par is information-insensitive: disclosure moves prices only where asymmetry about backing survives. We test this using a hand-collected calendar of 116 stablecoin reserve attestations by Tether and Circle, 2018–2026, in a panel with date and asset fixed effects. Tether’s releases widen its peg deviation by roughly half relative to peers the same day, without abnormal volume or redemptions: repricing, not runs. Circle’s releases move nothing on average, but do move its peg in months disclosing material reserve reallocations. Information sensitivity attaches to disclosure content, not issuer identity."
+      },
+      {
+          "t": "Market efficiency in a changing asset population: Mobility, entry, and survival over cryptocurrency’s full history",
+          "w": "Christos Ioannidis",
+          "s": "arXiv:2610.23283, 2026",
+          "url": "https://arxiv.org/abs/2610.23283",
+          "pdf": "https://arxiv.org/pdf/2610.23283",
+          "a": "Weak-form efficiency implies symmetry restrictions on the Markov chain governing movement across the cryptocurrency capitalisation distribution. We test them on the full listed population: 8,970 assets, 690 weekly cross-sections, 2013 to 2026, with entry, exit and survival observed rather than inferred. Symmetry is rejected in every era, but the asymmetry falls by seventy percent, and what converged is entry-driven compositional churn rather than coins’ own valuations. The bottom decile earns 27.5% per week on paper and nothing among assets that trade, on capacity of $293,000. Compensation for neglect exists precisely where trading does not."
+      },
+      {
+          "t": "You have to leave something behind: A trace-response theory of AI governance for research misconduct",
+          "w": "",
+          "a": "This article theorises research misconduct as a trace-response governance problem rather than only a failure of individual ethics or editorial vigilance. Misconduct may create textual, statistical, visual, relational, or workflow residues, but a residue becomes an institutional response only when it is detected, competently adjudicated, and followed by a proportionate consequence. Newton’s third law serves as a bounded heuristic for this paired structure, not a literal social law. Drawing on deterrence and procedural justice, the article develops a socio-technical model in which effective deterrence is the product of detection capacity (d), credible follow-through (f), and consequence (s). Because these levers are complements, a more accurate detector achieves little when flags are not reviewed consistently or sanctions are delayed and arbitrary. Allowing for enforcement error shows that deterrence depends on how well the chain discriminates between misconduct and honest work, not on detection alone: wrongful findings erode deterrence directly, and harsher sanctions can backfire under weak adjudication. With finite review capacity, raising sensitivity beyond what reviewers can absorb lowers deterrence, so the optimal screening threshold is interior. In a competitive research population, peer prevalence can create a tipping threshold between integrity-supporting and misconduct-supporting equilibria. The article contributes a trace-response architecture for publishers, universities, and funders: combine heterogeneous screening signals, keep humans responsible for findings, provide reasons and appeal, calibrate remedies to the violation, and use audits and aggregate reporting to update the system. AI can amplify accountability, but only legitimate institutions can convert a trace into a fair response.",
+          "noLink": true,
+          "noPdf": true
+      },
+      {
+          "t": "Safe haven or flight? Geopolitical risk, money, and exchange rate regimes, 1900–2020",
+          "w": "Dimitris Anastasiou",
+          "a": "Is money a safe haven when geopolitical risk rises, or a liability to be abandoned? We study the question for 17 advanced economies over 1900–2020, combining the Jordà–Schularick–Taylor Macrohistory Database with newspaper-based historical indexes of country-specific geopolitical risk. Under floating exchange rates, a one-standard-deviation rise in geopolitical risk is followed by a decline in broad money relative to GDP of about 2 percent within two years; under pegs no comparable decline is detected. The contrast is concentrated where inflation has recently been high, as a portfolio model in which the liquidity value of money competes with the expected erosion of its purchasing power predicts. The decline under floats is stable across specifications and holds with and without deposit insurance; the average difference between regimes is less robust. The funding base of banks has been exposed to geopolitical risk whenever the currency, rather than the bank, was the object of doubt.",
+          "noLink": true,
+          "noPdf": true
+      },
+      {
+          "t": "Geopolitical tensions and financial networks: Strategic shifts toward alternatives",
+          "w": "",
+          "s": "arXiv:2505.21480, 2025",
+          "url": "https://arxiv.org/abs/2505.21480",
+          "pdf": "https://arxiv.org/pdf/2505.21480",
+          "a": "Global financial systems are undergoing strategic shifts as geopolitical tensions reshape international trade and payments. The United States (US)–China trade war, sanctions regimes, and rising concerns over the weaponization of financial infrastructures like SWIFT have led countries to seek alternative networks, including China’s CIPS and emerging cross-border CBDCs. This letter presents a dynamic theoretical framework where sanction risks, investment choices, and network effects drive payment system migration. Empirical evidence from Russia, Saudi Arabia, India, and Argentina supports the model. Policy implications point toward increasing financial fragmentation, with critical roles for international institutions to mitigate systemic risks. The future of finance may be less global and more regionally fragmented, influenced heavily by political considerations."
+      }
+  ];
+
+  const pubs = [
+    { y: 'Forthcoming', t: 'Stickiness in bank credit ratings', w: 'Dimitris Anastasiou, Christos Ioannidis, Steven Ongena and Emmanouil Sifodaskalakis', j: 'International Journal of Central Banking', v: '', a: "We provide new evidence on the dynamics of bank credit ratings by studying rating stickiness as rating persistence. Using a global panel of more than 750 banks across 59 countries from 1988 to 2015, we estimate autoregressive rating models for Moody’s, S&P, and Fitch. The evidence indicates that bank ratings are highly persistent, but this persistence is asymmetric: upgrades exhibit stronger persistence than downgrades. This pattern is consistent with credit rating agencies requiring more durable confirmation before revising bank ratings upward than before incorporating negative information. We further show that rating persistence differs across agencies, rating categories, and time periods, with stronger persistence among higher-rated banks and meaningful shifts around major episodes of regulatory scrutiny and financial instability. Event-study evidence around rating actions provides a complementary visual test of asymmetric adjustment dynamics.", noPdf: true },
+    { y: 'Forthcoming', t: 'Innovation and SME credit constraints', w: 'Ioannis Vlassas, Christos Kallandranis and Dimitris Anastasiou', j: 'Small Business Economics', v: '', a: "This paper examines how engagement in innovation relates to access to finance along the entire credit process. Using the ECB’s SAFE survey for euro-area SMEs (2014–2022) and estimating recursive bivariate models, we distinguish the post-application stage (loan outcomes) from the pre-application stage (self-rationing through borrower discouragement). We find that innovators are associated with tighter financing on both stages. Conditional on application, the probability of being “Not Constrained” is 39.1% lower, while the likelihood of falling into the “Partially Constrained” and “Fully Constrained” categories is 16.1% and 22.9% higher, respectively. Before applying, innovators exhibit an 8.9% higher propensity to be discouraged. The cross-equation error correlation is negative and significant in both systems, indicating that models that ignore endogeneity understate these effects. Trade-credit estimates across both stages indicate limited substitution from bank to supplier financing, while country-specific estimates are directionally consistent but heterogeneous in size. These findings motivate policies that strengthen information infrastructures and deploy calibrated risk-sharing targeting innovative firms.", noPdf: true },
+    { y: 2026, t: 'Capitalization shifts in crypto’s wild frontier: A Markov chain analysis', w: 'Konstantinos Drakos and Dimitris Anastasiou', j: 'International Journal of Finance & Economics', v: '', a: "Using the population of cryptocurrencies listed with a reported capitalization on CoinMarketCap, roughly 8000 distinct assets observed weekly from April 2013 to July 2026, we investigate the mobility properties of the cryptocurrency market. We model movements across the cross-sectional capitalization distribution as a Markov chain augmented with entry and absorbing exit states and estimate the transition matrix that governs capitalization transitions. Market eras are identified endogenously: least-squares break detection applied to a rolling mobility index locates two structural breaks, in November 2017 and July 2021, which divide the market’s history into a frontier, an expansion and a consolidation era. Mobility declines and persistence rises monotonically across the three eras; the exit probability decreases with capitalization and market-wide exit risk falls sharply after the frontier era. Formal tests reject first-order dependence and exact time-homogeneity, as expected in samples of this size, but the deviations become smaller over time. Decile transitions are mostly driven by changes in a coin’s own capitalization rather than by changes in the composition of the asset universe. In a time-varying framework, mobility is significantly lower in the spot-ETF era, in broader markets and in high-VIX regimes. The results hold among the largest assets, which account for almost all of the market’s capitalization and are robust to excluding stablecoins and stale or implausible quotes and to alternative treatments of temporary disappearances. Overall, the evidence indicates that the cryptocurrency market has entered a phase of maturity.", doi: '10.1002/ijfe.70339', pdf: 'papers/capitalization-shifts-markov-ijfe-2026.pdf' },
+    { y: 2026, t: 'Time-varying skewness–kurtosis dynamics in Bitcoin markets', w: 'Ariston Karagiorgis', j: 'Journal of Futures Markets', v: '', a: "This paper examines the relationship between skewness and kurtosis in Bitcoin spot and futures markets using high-frequency data. We document a strong convex skewness–kurtosis relationship consistent with theoretical moment restrictions. Trading activity is positively associated with realized kurtosis, particularly in futures markets, though sensitive to specification and driven by extreme-return episodes. Allowing the relationship to evolve over time reveals substantial curvature variation, indicating state-dependent higher-moment dynamics. The close co-movement of results across markets suggests patterns reflect broad market-wide conditions. The empirical framework is reduced-form and results should be interpreted as conditional associations rather than causal effects.", doi: '10.1002/fut.70117', pdf: 'papers/skewness-kurtosis-bitcoin-jfm-2026.pdf' },
+    { y: 2026, t: 'Exploring the interplay of skewness and kurtosis: Dynamics in cryptocurrency markets amid the COVID-19 pandemic', w: 'Ariston Karagiorgis, Konstantinos Drakos and Christos Kallandranis', j: 'International Journal of Theoretical and Applied Finance', v: '29(3), 2650005', a: "In this paper, we examine how skewness interacts with kurtosis within the cryptocurrency market. We show that during the COVID-19 pandemic, there are more clusters of observations around the two flanks, highlighting the presence of a volatile behavior. Moreover, we document the evolution of the interrelationship as the pandemic progresses, identifying the domination of the extremes. Our findings advance the thinking that by exploiting the interrelationship between the two higher moments of cryptocurrencies, investors and researchers can have in their arsenal an additional analytic tool.", doi: '10.1142/S0219024926500056', pdfDoi: true },
+    { y: 2026, t: 'Positive COVID-19 related sentiment, economic uncertainty and risk management implications', w: 'Dimitris Anastasiou, Christos Kallandranis and Ioannis Vlassas', j: 'Journal of Banking Regulation', v: '27(1), 2', a: "This study explores the impact of positive COVID-19-related investor sentiment—measured through vaccine-related Google search activity—on global economic uncertainty, offering a novel perspective compared to the prevailing focus on negative sentiment. We construct two alternative high-frequency sentiment indices (COVID19+), employing both simple averaging and principal component analysis, to capture optimism associated with the vaccine rollout. Using a Vector Autoregression (VAR) framework on daily world-level data from January 2020 to May 2021, we assess the dynamic relationship between sentiment and multiple forward-looking proxies of economic uncertainty, namely the VIX, the Economic Policy Uncertainty Index (EPU), and a Twitter-based uncertainty index. Our empirical results reveal that positive sentiment shocks lead to a statistically significant and persistent reduction in uncertainty across all measures, consistent with the confidence channel in belief-driven business cycle theory. Robustness checks, including alternative lag specifications and Bayesian VAR estimation, confirm the stability of these results. From a risk management perspective, the findings underscore the strategic value of integrating real-time sentiment monitoring into policy frameworks, stress-testing models, and asset allocation strategies. By demonstrating that positive sentiment can mitigate uncertainty during crises, this research provides new insights into sentiment-driven economic dynamics and offers actionable guidance for policymakers and market participants aiming to enhance resilience in the face of systemic shocks.", doi: '10.1057/s41261-025-00303-z', pdfDoi: true },
+    { y: 2025, t: 'Cryptocurrency dynamics during global crises: Insights from Bitcoin’s interplay with traditional markets', w: 'Ariston Karagiorgis, Dimitris Anastasiou and Christos Kallandranis', j: 'International Review of Economics & Finance', v: '103, 104512', a: "This study delves into the differences between traditional financial markets, as proxied by their corresponding future contracts, and the cryptocurrency market, focusing on Bitcoin, during major global events: the COVID-19 pandemic, the Russia–Ukraine war, and the Israel–Palestine conflict. It reveals Bitcoin’s increased trading volume post-COVID-19, highlighting its appeal as a digital safe haven. This trend persists during subsequent crises, suggesting a strategic shift towards cryptocurrencies as diversification tools. Despite volume fluctuations, Bitcoin’s price stability reflects investor confidence in its long-term viability. The significant change in EuroStoxx 50 returns during the Israel–Palestine conflict highlights localized geopolitical influences on markets. The study underscores the importance of considering both global and regional factors in investment decisions. It emphasizes cryptocurrencies’ growing significance in the global financial market, particularly during crises, and suggests further exploration into investor behavior and regulatory effects. Understanding these dynamics is crucial for navigating the evolving financial landscape.", doi: '10.1016/j.iref.2025.104512', pdf: 'papers/bitcoin-global-crises-iref-2025.pdf' },
+    { y: 2025, t: 'The impact of COVID-19 first wave on cryptocurrencies and G7 stock markets', w: 'Konstantinos Drakos, Christos Kallandranis, Dimitris Anastasiou and V. A. Doan', j: 'Journal of Small Business and Enterprise Development', v: '32(3), 725–738', a: "In recent years, traditional markets have been challenged by the emergence of cryptocurrencies, particularly when there are economic disruptions such as the COVID-19 pandemic. This paper examines the intricacies of financial dynamics during the COVID-19 crisis and explores their impact on traditional and cryptocurrency markets. In particular, we explore whether cryptocurrencies are a better safe haven of value than traditional financial markets during economic disruptions like that resulting from the COVID-19 pandemic. Using a difference-in-differences methodology across the periods before and after the pandemic was declared by the World Health Organization, we find that, contrary to popular belief and compared to traditional assets, cryptocurrencies may not be a safe haven during crises and may begin to mimic traditional assets more closely during such periods. The study enhances our understanding of asset behaviour during economic shocks and has significant implications for investors, policymakers and regulators as they navigate future financial crises.", doi: '10.1108/JSBED-12-2023-0582', pdfDoi: true },
+    { y: 2025, t: 'Analyzing the effects of climate risk on discouraged borrowers: Deciphering the contradictory forces', w: 'Dimitris Anastasiou, Christos Kallandranis and Faten Lakhal', j: 'Risk Analysis', v: '45(1), 223–239', a: "We examine the impact of climate risk on discouraged borrowers among small and medium-sized enterprises (SMEs) in the eurozone, using a unique European Central Bank dataset focusing on the demand side of credit markets. We argue that two opposing channels may exist in this relationship: Either climate risk has a negative effect stemming from increased demand for sustainable or climate-resilient projects that enhance creditworthiness, or climate risk has a positive effect arising from heightened climate uncertainty and risk aversion, leading to credit self-rationing among SMEs. Our findings reveal that heightened climate risk prompts SMEs to self-ration credit, leading to higher probabilities of discouraged borrowers. Our research deepens the understanding of the impact of climate risk on credit-related decisions, stressing the need for proactive measures to integrate climate risk assessments into regulatory frameworks and lending practices. The findings underscore the vulnerability of SMEs to climate risk, emphasizing the importance of tailored support mechanisms for economic resilience.", doi: '10.1111/risa.15071', pdf: 'papers/climate-risk-discouraged-borrowers-risk-analysis-2025.pdf' },
+    { y: 2024, t: 'Structural shifts in bank credit ratings', w: 'Christos Ioannidis and Emmanouil Sifodaskalakis', j: 'Journal of Financial Stability', v: '73, 101272', a: "We investigate the time variation in credit rating standards awarded to financial institutions of commercial bank credit ratings awarded by the three principal CRAs from 1990 to 2015 in a world-wide context by testing for well-defined structural shifts. We focus on the part of the ratings that cannot be accounted using publicly available information. We test whether major financial events are conditioning, ex-post such changes. Distinctively in this paper’s timespan our analysis covers four periods: (i) before and (ii) after the 2001–2 corporate collapses, followed by (iii) before the global financial crisis and (iv) after the global financial crisis. We find substantial differences in the assignment of bank credit ratings among the three major agencies, Moody’s, Fitch, and S&P. Agencies differ both in terms of re-adjustment of ratings but also on the speed of response to the events. All three agencies tightened ratings during the 2008 crisis and kept reducing them in its aftermath.", doi: '10.1016/j.jfs.2024.101272', pdf: 'papers/structural-shifts-bank-credit-ratings-jfs-2024.pdf' },
+    { y: 2024, t: 'Monetary policy impact on sustainability: Analyzing interest rates and corporate carbon emissions', w: 'Dimitris Anastasiou, Assil Guizani, Christos Kallandranis and Faten Lakhal', j: 'Journal of Environmental Management', v: '368, 122119', a: "This study aims to investigate the impact of monetary policy on firms’ carbon emissions. The primary focus is on the effect of increasing interest rates on the carbon footprint of companies, both prior to and following the implementation of the Paris Agreement in 2015. The results show that there is a positive relationship between interest rates and carbon emissions indicating that in the face of increasing interest rates, companies are more likely to choose short-term financial stability above long-term sustainability objectives. This positive relationship is less prevalent following the Paris Agreement suggesting that policymakers should continue to strengthen global climate initiatives as a pressure for companies to invest in green activities. Additional evidence suggests that the impact of interest rates on carbon emissions is particularly noticeable in situations characterized by elevated levels of economic and policy uncertainty, weak corporate governance quality, and poor investor protection. These results are robust to endogeneity concerns, alternative measures of interest rates, carbon emission, and alternative samples.", doi: '10.1016/j.jenvman.2024.122119', pdf: 'papers/monetary-policy-carbon-emissions-jem-2024.pdf' },
+    { y: 2024, t: 'The skewness–kurtosis plane for cryptocurrencies’ universe', w: 'Ariston Karagiorgis and Konstantinos Drakos', j: 'International Journal of Finance & Economics', v: '29(2), 2543–2555', a: "Cryptocurrency returns diverge excessively from normality, with the interrelationship of Skewness and Kurtosis being accordant with a parabolic form, yet this connection is scantly documented. We begin by demonstrating diagrammatically the attributes of the S-K plane for cryptocurrencies. Moreover, by taking advantage of the panel structure of the data, we estimate a quadratic model for the S-K plane. Then we investigate whether the type and the infrastructure of the cryptocurrency, as well as the period under examination, alter the architecture of the plane. We find that the squared Skewness of tokens substantially lowers the slope of Kurtosis, while the same applies to the earlier era of the market.", doi: '10.1002/ijfe.2795', pdf: 'papers/skewness-kurtosis-plane-ijfe-2024.pdf' },
+    { y: 2024, t: 'Central bank digital currencies', w: 'Thanos Verousis', j: 'Advances in Blockchain Research and Cryptocurrency Behaviour', v: 'book chapter', a: "The advent of Central Bank Digital Currencies (CBDCs) represents a transformative milestone in modern banking, capturing the attention of policymakers, financial institutions, and academics alike. This chapter provides a comprehensive overview of the expanding body of literature on CBDCs. It delves into the critical aspects that define their significance and potential challenges within the banking sector. The primary objective of this chapter is to dissect the foundational elements crucial for the success of CBDC initiatives. It also aims to uncover how CBDCs have the potential to reshape the dynamics of monetary policy transmission and influence the stability of the banking sector, necessitating a delicate balance. Moreover, as the narrative progresses, the focus shifts to the potential of CBDCs to enhance financial inclusion and their role in optimising payment systems. CBDCs are examined for their capacity to ignite financial innovation through integration with the existing infrastructure and the creation of novel financial products. Lastly, this chapter sheds light on the intricate legal and regulatory framework surrounding CBDCs. This framework encompasses both national and international coordination, cybersecurity concerns, and data privacy. Additionally, it discusses the imperative need for the transformation of commercial banking models driven by CBDCs, which, in turn, requires the adaptation of business strategies to remain competitive.", doi: '10.1515/9783110981551-008', pdfDoi: true },
+    { y: 2023, t: 'Testing for herding in artificial intelligence-themed cryptocurrencies following the launch of ChatGPT', w: 'Dimitris Anastasiou', j: 'Journal of Financial Data Science', v: '5(4), 161–171', a: "This article aims to investigate the presence of herding behavior in artificial intelligence (AI)–themed cryptocurrencies following the launch of ChatGPT. The authors analyze daily data from major AI-themed cryptocurrencies between November 2022 and February 2023. This study finds evidence of irrationality among investors in this market segment who tend to imitate others’ decisions regardless of their own beliefs during down events. The authors connect this finding to the herding theory in financial economics and highlight the implications for investors and policymakers. This article contributes to the literature on the impact of AI on financial markets and suggests the need for further research in this area. Finally, this study provides important policy implications, as it could help investors better understand the risks associated with this emerging asset class.", doi: '10.3905/jfds.2023.1.134', pdfDoi: true },
+    { y: 2022, t: 'Constructing a positive sentiment index for COVID-19: Evidence from G20 stock markets', w: 'Dimitris Anastasiou and Konstantinos Drakos', j: 'International Review of Financial Analysis', v: '81, 102111', a: "The present study investigates the degree of market responses through the scope of investors’ sentiment during the COVID-19 pandemic across G20 markets by constructing a novel positive search volume index for COVID-19 (COVID19+). Our key findings, obtained using a Panel-GARCH model, indicate that an increased COVID19+ index suggests that investors decrease their COVID-19 related crisis sentiment by escalating their Google searches for positively associated COVID-19 related keywords. Specifically, we explore the predictive power of the newly constructed index on stock returns and volatility. According to our findings, investor sentiment positively (negatively) predicts the stock return (volatility) during the COVID-19. This is the first study assessing global sentiment by proposing a novel proxy and its impacts on the G20 equity market.", doi: '10.1016/j.irfa.2022.102111', pdfDoi: true },
+    { y: 2022, t: 'Behavioural finance and cryptocurrencies', w: 'Thanos Verousis', j: 'Review of Behavioral Finance', v: '14(4), 545–562', a: "The present study sets out to examine the empirical literature on the behavioural aspects of cryptocurrencies, showing the findings of related studies and discussing the various results. A systematic literature review of cryptocurrencies in behavioural finance seems to be timely and particularly important in terms of providing a guide for future research. Key topics include an extensive review on the issue of herding behaviour amongst cryptocurrencies, momentum effects and overreaction, contagion effect, sentiment and uncertainty, along with studies related to investment decision-making, optimism bias, disposition, lottery and size effects. The survey complements recent papers in the area by offering a systematic account of the influence of behavioural factors on cryptocurrencies; its purpose is not just to index the relevant literature, but rather to showcase and pinpoint several research areas that have emerged in the field of behavioural cryptocurrency research.", doi: '10.1108/RBF-11-2021-0256', pdfDoi: true },
+    { y: 2021, t: 'Cryptocurrencies’ price crash risk and crisis sentiment', w: 'Dimitris Anastasiou and Konstantinos Drakos', j: 'Finance Research Letters', v: '42, 101928', a: "We examine the effect of crisis sentiment on cryptocurrencies’ price crash risk. We show that cryptocurrencies’ price crash risk is positively related to the FEARS index, indicating that a higher crisis sentiment by investors increases cryptocurrencies’ price crash risk. Our findings advance the understanding of the consequences of investor sentiment on the cryptocurrency market.", doi: '10.1016/j.frl.2021.101928', pdfDoi: true },
+    { y: 2021, t: 'The explosion in cryptocurrencies: A black hole analogy', w: 'Konstantinos Drakos', j: 'Financial Innovation', v: '7(1), 8', a: "Using an analogy between finance and astrophysics, this study aims to investigate whether there exists a mechanism that can describe the explosive increase in the number of traded cryptocurrencies and the cryptocurrency market in general. In physics, the Schwarzschild radius indicates that black holes are constantly expanding because of their mass increase. Enriching this analogy, we consider the cryptocurrency market as a self-gravitational body whose mass is denoted by (1) the number of traded cryptocurrencies and (2) in terms of increasing market capitalization for a given number of traded cryptocurrencies. By analyzing weekly snapshot data of all traded cryptocurrencies from January 4, 2009, to June 14, 2020, we find evidence that the above-mentioned mechanism exists. The results clearly indicate the self-gravitational property of the cryptocurrency market, which is direct evidence toward the hypothesis that the changes in the traded cryptocurrencies are a positive function of the previous period’s number of traded cryptocurrencies.", doi: '10.1186/s40854-020-00222-0', pdf: 'papers/explosion-cryptocurrencies-black-hole-fi-2021.pdf' },
+    { y: 2020, t: 'Testing for herding in the cryptocurrency market', w: 'Konstantinos Drakos', j: 'Finance Research Letters', v: '33, 101210', a: "The study investigates whether herding behavior is present in the rapidly emerging cryptocurrency market. By analyzing daily data from major cryptocurrencies during the period August 2015 to December 2018, we find evidence that investors in the cryptocurrency market act irrationally and imitate other’s decisions with no reference to their own beliefs. Furthermore, our empirical results provide evidence that the up-events market dispersion follows market movements at a faster pace compared to the down events. Thus, cryptocurrencies show a behavior where they tend to move in tandem, which does not necessarily reflect their fundamentals.", doi: '10.1016/j.frl.2019.06.008', pdfDoi: true },
+  ];
+
+  let n = 0;
+  const absBlock = p => { const id = 'abs' + (n++); return `
+      <div class="plinks">
+        <button type="button" aria-expanded="false" aria-controls="${id}"><span class="sign">›</span>ABSTRACT</button>
+        ${p.noPdf ? '' : p.pdf ? `<a href="${esc(p.pdf)}">${esc(p.pdfLabel || 'PDF')}</a>` : p.pdfDoi ? `<a href="https://doi.org/${esc(p.doi)}">PUBLISHER</a>` : `<span title="PDF coming soon">PDF</span>`}
+      </div>
+      <div class="absbody" id="${id}" hidden>${p.a ? esc(p.a) : '<span class="ph">Abstract to be added.</span>'}</div>`; };
+
+  document.getElementById('wp').innerHTML = workingPapers.map(p => `
+    <div class="paper">
+      <div class="t">${p.noLink ? esc(p.t) : `<a href="${p.url ? esc(p.url) : scholar(p.t)}">${esc(p.t)}</a>`}</div>
+      ${p.w ? `<div class="meta">with ${esc(p.w)}</div>` : ''}
+      ${p.s ? `<div class="meta">${esc(p.s)}</div>` : ''}
+      ${absBlock(p)}
+    </div>`).join('');
+
+  let lastYear = null;
+  document.getElementById('pubs').innerHTML = pubs.map(p => {
+    const head = p.y !== lastYear ? `<div class="year">${p.y}</div>` : '';
+    lastYear = p.y;
+    return head + `
+    <div class="paper">
+      <div class="t">${typeof p.y === 'number' ? `<a href="${p.doi ? 'https://doi.org/' + esc(p.doi) : scholar(p.t)}">${esc(p.t)}</a>` : esc(p.t)}</div>
+      ${p.w ? `<div class="meta">with ${esc(p.w)}</div>` : ''}
+      <div class="meta"><i>${esc(p.j)}</i>${p.v ? ', ' + esc(p.v) : ''}, ${typeof p.y === 'number' ? p.y : 'forthcoming'}</div>
+      ${typeof p.y === 'number' || p.a ? absBlock(p) : ''}
+    </div>`;
+  }).join('');
+
+  document.addEventListener('click', e => {
+    const b = e.target.closest('.plinks button');
+    if (!b) return;
+    const open = b.getAttribute('aria-expanded') !== 'true';
+    b.setAttribute('aria-expanded', open);
+    document.getElementById(b.getAttribute('aria-controls')).hidden = !open;
+  });
+
+  document.getElementById('yr').textContent = new Date().getFullYear();
+}
+</script>
+</body>
+</html>
